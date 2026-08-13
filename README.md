@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github page]()
-- Live Site URL: [Webpage]()
+- Solution URL: [Github page](https://github.com/artemkotko14/ecommerce-product-page)
+- Live Site URL: [Webpage](https://artemkotko14.github.io/ecommerce-product-page/)
 
 ## My process
 
