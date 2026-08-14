@@ -29,7 +29,6 @@ const productImage = document.querySelector(".product-image");
 const lightboxMainImage = document.querySelector(".lightbox-main-img");
 const thumbnailImages = document.querySelector(".thumbnail-images");
 const navigationArrows = document.querySelector(".navigation-arrows");
-const lightboxArrows = document.querySelector(".lightbox-arrows");
 const desktopMenu = document.getElementById("desktop-menu");
 const mainThumbnails = document.querySelectorAll(
   ".thumbnail-images .thumbnail",
@@ -249,7 +248,7 @@ function updateCart() {
 }
 
 function updatePrice() {
-  let price = discountedPrice.textContent;
+  const price = discountedPrice.textContent;
   cartItemPrice.innerHTML = `${price} X ${cartQuantity}`;
   let priceNumber = Number(price.slice(1));
   cartItemTotal.innerHTML = `$${(priceNumber * cartQuantity).toFixed(2)}`;
