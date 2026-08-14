@@ -59,12 +59,7 @@ mainThumbnails.forEach((thumbnail, index) => {
 
 productImage.addEventListener("click", () => {
   if (window.innerWidth > 950) {
-    overlay.classList.remove("hidden");
-    lightbox.classList.remove("hidden");
-    header.setAttribute("inert", "");
-    main.setAttribute("inert", "");
-    stopCarousel();
-    updateLightboxImage();
+    openLightbox();
   }
 });
 
@@ -95,7 +90,14 @@ document.addEventListener("keydown", (event) => {
     closeLightbox();
   }
 });
-
+function openLightbox() {
+  overlay.classList.remove("hidden");
+  lightbox.classList.remove("hidden");
+  header.setAttribute("inert", "");
+  main.setAttribute("inert", "");
+  stopCarousel();
+  updateLightboxImage();
+}
 function closeLightbox() {
   lightbox.classList.add("hidden");
   overlay.classList.add("hidden");
@@ -108,6 +110,13 @@ window.addEventListener("resize", () => {
   if (window.innerWidth < 950 && !lightbox.classList.contains("hidden")) {
     closeLightbox();
   }
+});
+
+productImage.addEventListener("keydown", (event) => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+  }
+  openLightbox();
 });
 
 function updateImage() {
