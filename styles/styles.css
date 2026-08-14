@@ -215,6 +215,7 @@ main {
 }
 
 .product-image {
+  background-image: url("../images/image-product-1.jpg");
   padding: 8rem 1rem;
   background-size: cover;
   background-position: center;
