@@ -487,10 +487,14 @@ main {
     height: 100%;
     max-width: rem(448);
   }
+  .main-image-container {
+    max-width: rem(448);
+    width: 100%;
+  }
   .product-image {
     height: rem(445);
     max-height: none;
-    max-width: rem(448);
+
     width: 100%;
     &:hover {
       cursor: pointer;

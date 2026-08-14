@@ -91,7 +91,17 @@
     </header>
     <main id="main">
       <div class="product-image-container">
-        <div class="product-image">
+        <div class="main-image-container">
+          <div class="product-image" aria-label="Open gallery">
+            <div class="navigation-arrows">
+              <button type="button" id="main-left-arrow" class="arrow" aria-label="previous image">
+                <img src="./images/icon-previous.svg" alt="">
+              </button>
+              <button type="button" id="main-right-arrow" class="arrow" aria-label="next image">
+                <img src="./images/icon-next.svg" alt="">
+              </button>
+            </div>
+          </div>
           <div class="cart-container hidden" id="cart-container">
             <h2 class="cart-title">Cart</h2>
             <div class="cart-message-container">
@@ -116,14 +126,7 @@
               <button type="button" class="button" id="btn-checkout">Checkout</button>
             </div>
           </div>
-          <div class="navigation-arrows">
-            <button type="button" id="main-left-arrow" class="arrow" aria-label="previous image">
-              <img src="./images/icon-previous.svg" alt="">
-            </button>
-            <button type="button" id="main-right-arrow" class="arrow" aria-label="next image">
-              <img src="./images/icon-next.svg" alt="">
-            </button>
-          </div>
+
         </div>
         <div class="thumbnail-images hidden">
           <button type="button" class="thumbnail thumbnail-selected">

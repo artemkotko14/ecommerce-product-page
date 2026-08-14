@@ -588,10 +588,13 @@ main {
     height: 100%;
     max-width: 28rem;
   }
+  .main-image-container {
+    max-width: 28rem;
+    width: 100%;
+  }
   .product-image {
     height: 27.8125rem;
     max-height: none;
-    max-width: 28rem;
     width: 100%;
   }
   .product-image:hover {
