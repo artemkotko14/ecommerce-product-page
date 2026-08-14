@@ -250,7 +250,7 @@ function updateCart() {
 function updatePrice() {
   const price = discountedPrice.textContent;
   cartItemPrice.innerHTML = `${price} X ${cartQuantity}`;
-  let priceNumber = Number(price.slice(1));
+  const priceNumber = Number(price.slice(1));
   cartItemTotal.innerHTML = `$${(priceNumber * cartQuantity).toFixed(2)}`;
 }
 
