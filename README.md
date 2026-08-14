@@ -48,29 +48,39 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Changing color of svg img:
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+filter: brightness(0) saturate(100%) invert(12%) sepia(8%) saturate(761%)
+  hue-rotate(178deg) brightness(95%) contrast(93%);
+```
+
+To central element vertically:
+
+```css
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+```
+
+I've learnt how to make a carousel:
+
+```js
+let carouselTimer;
+
+function startCarousel() {
+  clearInterval(carouselTimer);
+  carouselTimer = setInterval(() => {
+    changeImage(1);
+  }, 6000);
 }
 ```
 
+I also learned how to reload page with JS:
+
 ```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+location.reload();
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
