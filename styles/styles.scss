@@ -436,6 +436,9 @@ main {
   }
 }
 @media screen and (min-width: 59.375rem) {
+  .body {
+    justify-content: flex-start;
+  }
   .homepage {
     max-width: rem(1110);
     gap: rem(96);
