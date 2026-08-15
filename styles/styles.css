@@ -535,7 +535,7 @@ main {
   }
 }
 @media screen and (min-width: 59.375rem) {
-  .body {
+  body {
     justify-content: flex-start;
   }
   .homepage {
