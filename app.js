@@ -179,6 +179,17 @@ lightboxRightArrow.addEventListener("click", () => {
 lightboxLeftArrow.addEventListener("click", () => {
   changeLightboxThumbnail(-1);
 });
+document.addEventListener("keydown", (event) => {
+  if (lightbox.classList.contains("hidden")) return;
+
+  if (event.key === "ArrowLeft") {
+    changeLightboxThumbnail(-1);
+  }
+
+  if (event.key === "ArrowRight") {
+    changeLightboxThumbnail(1);
+  }
+});
 
 //carousel;
 let carouselTimer;
